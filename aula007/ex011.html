@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturalidade</title>
+</head>
+<body>
+    <h1>Qual o seu país?</h1>
+    <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="pais()">
+
+    <div id="res">
+
+
+    </div>
+
+    <script>
+        function pais() {
+            var txtp = window.document.querySelector('#txtpais')
+            var res = window.document.querySelector('#res')
+            var p = txtp.value
+            
+            res.innerHTML = `<p>Seu país é <strong>${p}</strong></p>`
+            if (p == 'Brasil') {
+                res.innerHTML += `<p>Você é <strong>BRASILEIRO!</strong></p>`
+            } else{
+                res.innerHTML += `<p>Você é estrageiro!</p>`
+
+            }
+            
+        }
+
+    </script>
+    
+</body>
+</html>
