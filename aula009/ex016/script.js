@@ -16,18 +16,22 @@ function verificar() {
             if (idade >=0 && idade < 10) {
                 //Criança
                 img.setAttribute('src', 'criançaM.jpg')
+                document.body.style.background = 'rgb(113, 143, 233)'
 
             } else if (idade < 18) {
                 //Jovem
                 img.setAttribute('src', 'adolecenteM.jpg')
+                document.body.style.background = ' rgb(113, 143, 233)'
 
             } else if (idade < 45) {
                 //Aduto
                 img.setAttribute('src', 'adultoM.jpg')
+                document.body.style.background = 'rgb(113, 143, 233)'
 
             } else {
                 //Idoso
                 img.setAttribute('src', 'idosoM.jpg')
+                document.body.style.background = 'rgb(113, 143, 233)'
 
             }
         } else if (fsex[1].checked) {
